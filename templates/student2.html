@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <U><h1>THIS IS Subjects TABLE DETAILS </h1></U>
+        <marquee behavior="" direction="right">  <table border="5px"  >
+            <tr>
+                <th style="color: red;">c_id</th>
+                <th style="color:blue">stid</th>
+                <th style="color: black;">s1_t</th>
+                <th style="color: rgb(221, 48, 48);">s1_e</th>
+                <th style="color: purple;">s1_h</th>
+            </tr>
+            {% for i in Sub %}
+            <tr> 
+                <td>{{i.stid}}</td>
+                <td>{{i.c_id}}</td>
+                
+                <td>{{i.s1_t}}</td>
+                <td>{{i.s1_e}}</td>
+                <td>{{i.s1_h}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </center></marquee>
+    
+</body>
+</html>

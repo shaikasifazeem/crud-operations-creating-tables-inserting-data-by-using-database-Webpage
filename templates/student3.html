@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: dodgerblue;">
+    <center>
+       <marquee behavior="" direction="up"> <U><h1>THIS IS STUDENTS : TABLE - DETAILS </h1></U></marquee>
+        <table border="4px" style="border-color: fuchsia;">
+            <tr style="background-color: darkorange;">
+                
+                <th style="color: crimson;">stid</th>
+                <th style="font-size: large;">s1_tmarks</th>
+                <th style="color: rgb(19, 230, 36);">s1_emarks</th>
+                <th style="color: darkviolet;">s1_hmarks</th>
+            </tr>
+            {% for i in Stu %}
+            <tr>
+               
+                <td>{{i.stid}}</td>
+                
+                <td>{{i.s1_tmarks}}</td>
+                <td>{{i.s1_emarks}}</td>
+                <td>{{i.s1_hmarks}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </center>
+    
+</body>
+</html>
